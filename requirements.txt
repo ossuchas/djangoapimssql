@@ -4,3 +4,6 @@ django-cors-headers
 Django
 pytz
 sqlparse
+gunicorn
+psycopg2
+whitenoise
