@@ -25,7 +25,8 @@ SECRET_KEY = 'orgffa1kkg8=!u*f$+0)2lrcou(kc$(%-^p%&zyql-m@rrwdm9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.herokuapp.com']
+# ALLOWED_HOSTS = ['.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]']
 
 
 # Application definition
@@ -39,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
-    'crm',
+    'flight',
 ]
 
 MIDDLEWARE = [

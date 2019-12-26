@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.contrib.auth.models import User
-from crm.models import Schedule
-from crm.serializers import ScheduleSerializer
+from flight.models import Schedule
+from flight.serializers import ScheduleSerializer
 from rest_framework import viewsets, status
 from rest_framework.parsers import JSONParser
 from django.http.response import JsonResponse
@@ -58,3 +58,5 @@ def schedule_detail(request, id):
         schedule.delete()
         return HttpResponse(status=status.HTTP_204_NO_CONTENT)
 
+
+# Create your views here.

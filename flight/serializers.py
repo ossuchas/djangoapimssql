@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User
 from rest_framework import serializers
-from crm.models import Schedule
+from flight.models import Schedule
 
 
 class ScheduleSerializer(serializers.HyperlinkedModelSerializer):

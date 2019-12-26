@@ -1,5 +1,5 @@
 from django.contrib import admin
-from crm.models import Schedule
+from flight.models import Schedule
 
 
 class TripTypeAdmin(admin.ModelAdmin):
@@ -9,3 +9,5 @@ class TripTypeAdmin(admin.ModelAdmin):
 
 # Register your models here.
 admin.site.register(Schedule, TripTypeAdmin)
+
+# Register your models here.
