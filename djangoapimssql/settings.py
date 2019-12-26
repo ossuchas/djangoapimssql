@@ -87,15 +87,12 @@ WSGI_APPLICATION = 'djangoapimssql.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'sql_server.pyodbc',
-        'NAME': 'db_temp',
-        'USER': 'sa',
-        'PASSWORD': 'P@ssw0rd',
-        'HOST': '192.168.2.52',
-        'PORT': '',
-        'OPTIONS': {
-            'driver': 'ODBC Driver 17 for SQL Server',
-        },
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd979rkhokk3jgc',
+        'USER': 'smftxmbmezpbqs',
+        'PASSWORD': '5d7e07f63d2a1b812beef386f4267512a3d9294e61b2f6c84721a678acfa9d9b',
+        'HOST': 'ec2-107-21-103-80.compute-1.amazonaws.com',
+        'PORT': '5432',
     },
 }
 
