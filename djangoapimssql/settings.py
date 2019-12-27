@@ -55,13 +55,15 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
 ]
 
-CORS_ORIGIN_WHITELIST = [
-    'http://localhost:8000',
-    'http://localhost:4200',
-    'http://127.0.0.1:8000',
-    'https://pacific-coast-23892.herokuapp.com',
-    'https://pacific-coast-23892.herokuapp.com/flight/schedule/',
-]
+CORS_ORIGIN_ALLOW_ALL = True
+
+# CORS_ORIGIN_WHITELIST = [
+#     'http://localhost:8000',
+#     'http://localhost:4200',
+#     'http://127.0.0.1:8000',
+#     'https://pacific-coast-23892.herokuapp.com',
+#     'https://pacific-coast-23892.herokuapp.com/flight/schedule/',
+# ]
 
 ROOT_URLCONF = 'djangoapimssql.urls'
 
