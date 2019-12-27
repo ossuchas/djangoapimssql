@@ -6,7 +6,7 @@ from flight.models import Schedule
 class ScheduleSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Schedule
-        fields = ('airline',
+        fields = ('id', 'airline',
                   'flight_no',
                   'trip_type',
                   'departure_airport',
